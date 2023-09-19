@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{D9E58D32-B292-4213-805B-2D133511D0F6}|Default">
+  <MonoDevelop.Ide.ItemProperties.VehicleManagementSoftware PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VehicleManagementSoftware/README.md">
+    <Files>
+      <File FileName="VehicleManagementSoftware/Data/DataVehicle.cs" />
+      <File FileName="VehicleManagementSoftware/Services/CarService.cs" />
+      <File FileName="VehicleManagementSoftware/Services/VehicleService.cs" />
+      <File FileName="VehicleManagementSoftware/Services/MotobikeService.cs" />
+      <File FileName="VehicleManagementSoftware/Services/TruckService.cs" />
+      <File FileName="VehicleManagementSoftware/Models/Vehicle.cs" />
+      <File FileName="VehicleManagementSoftware/Helpers/Common.cs" />
+      <File FileName="VehicleManagementSoftware/Services/MenuService.cs" />
+      <File FileName="VehicleManagementSoftware/Program.cs" Line="35" Column="65" />
+      <File FileName="VehicleManagementSoftware/README.md" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="VehicleManagementSoftware" expanded="True">
+            <Node name="VehicleManagementSoftware" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="README.md" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
