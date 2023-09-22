@@ -45,3 +45,5 @@ Tìm phương tiện theo màu
 ```
 Tìm phương tiện sản xuất trước năm x (x được cung cấp từ người dùng).
 ```
+```
+Đọc ghi file
