@@ -24,8 +24,8 @@ namespace Vehicles.Services
 
                 do
                 {
-                    _choice = Console.ReadLine();
                     Strings.printTypeVehicle();
+                    _choice = Console.ReadLine();
                     if (Common.checkIsNumeric(_choice))
                     {
                         choice = int.Parse(_choice);
@@ -153,7 +153,7 @@ namespace Vehicles.Services
                 }
                 if (typeQuery == 3)
                 {
-                    if (vehicle.color == query)
+                    if (vehicle.year <= int.Parse(query))
                     {
                         _printVehicle(vehicle);
                         Strings.lineTableDataVehicle();
