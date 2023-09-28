@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{ACCC8A0C-348E-4614-9673-A07621E4037A}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Vehicles PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vehicles/Database/Data.cs">
+    <Files>
+      <File FileName="Vehicles/Program.cs" Line="1" Column="14" />
+      <File FileName="Vehicles/Services/VehicleService.cs" Line="250" Column="41" />
+      <File FileName="Vehicles/Database/Data.cs" Line="232" Column="43" />
+      <File FileName="Vehicles/Models/Car.cs" Line="24" Column="10" />
+      <File FileName="Vehicles/Models/Motobike.cs" Line="31" Column="10" />
+      <File FileName="Vehicles/Models/Truck.cs" Line="30" Column="30" />
+      <File FileName="Vehicles/Models/Vehicle.cs" Line="37" Column="1" />
+      <File FileName="Vehicles/Helpers/Constants.cs" />
+      <File FileName="Vehicles/Helpers/Strings.cs" />
+      <File FileName="Vehicles/Routes/Route.cs" Line="15" Column="45" />
+      <File FileName="Vehicles/Helpers/Common.cs" Line="87" Column="29" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Vehicles" expanded="True">
+            <Node name="Vehicles" expanded="True">
+              <Node name="Database" expanded="True">
+                <Node name="Data.cs" selected="True" />
+              </Node>
+              <Node name="Helpers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Routes" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
