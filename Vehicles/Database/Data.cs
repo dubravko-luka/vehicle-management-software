@@ -21,17 +21,24 @@ namespace Vehicles.Database
 
 		private void _handleCheckFile()
 		{
+            // If file not exists
             if (!File.Exists(Constants.PATH_FILE_DATABASE_VEHICLE))
             {
+                // Create file
                 File.WriteAllText(Constants.PATH_FILE_DATABASE_VEHICLE, "");
             }
         }
 
 		public static void addData(string text)
 		{
-            using (StreamWriter writer = new StreamWriter(Constants.PATH_FILE_DATABASE_VEHICLE, true))
+            string[] line = new string[] { text };
+            try
             {
-                writer.WriteLine(text);
+                File.AppendAllLines(Constants.PATH_FILE_DATABASE_VEHICLE, line);
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine("");
             }
         }
 
