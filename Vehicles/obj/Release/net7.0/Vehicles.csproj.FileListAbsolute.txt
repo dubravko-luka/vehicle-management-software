@@ -1,0 +1,14 @@
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/bin/Release/net7.0/Vehicles
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/bin/Release/net7.0/Vehicles.deps.json
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/bin/Release/net7.0/Vehicles.runtimeconfig.json
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/bin/Release/net7.0/Vehicles.dll
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/bin/Release/net7.0/Vehicles.pdb
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/obj/Release/net7.0/Vehicles.GeneratedMSBuildEditorConfig.editorconfig
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/obj/Release/net7.0/Vehicles.AssemblyInfoInputs.cache
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/obj/Release/net7.0/Vehicles.AssemblyInfo.cs
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/obj/Release/net7.0/Vehicles.csproj.CoreCompileInputs.cache
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/obj/Release/net7.0/Vehicles.dll
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/obj/Release/net7.0/refint/Vehicles.dll
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/obj/Release/net7.0/Vehicles.pdb
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/obj/Release/net7.0/Vehicles.genruntimeconfig.cache
+/Users/phuongnguyen/Desktop/Vehicles/Vehicles/obj/Release/net7.0/ref/Vehicles.dll

@@ -22,6 +22,7 @@ namespace Vehicles.Services
                 string _choice;
                 bool choiceValid = true;
 
+                // Input and validate the user's choice for vehicle type
                 do
                 {
                     Strings.printTypeVehicle();
@@ -33,6 +34,7 @@ namespace Vehicles.Services
                     }
                 } while (choiceValid);
 
+                // Check if the user wants to quit
                 if (Common.isQuit(choice))
                 {
                     Console.Clear();
@@ -53,6 +55,7 @@ namespace Vehicles.Services
             int year = Common.inputInt("Nam san xuat: ");
             double price = Common.inputDouble("Gia xe: ");
 
+            // Create a vehicle object based on the user's choice
             switch (choice)
             {
                 case 1:
@@ -86,6 +89,7 @@ namespace Vehicles.Services
                 {
                     Strings.printTypeGetListVehicle();
                     _choice = Console.ReadLine();
+
                     if (Common.checkIsNumeric(_choice))
                     {
 
@@ -135,18 +139,21 @@ namespace Vehicles.Services
         {
             Data.getAllVehicle();
             Strings.headerTableDataVehicle();
+            int count = 0;
             foreach (var vehicle in Data.getAllVehicle())
             {
 
                 if (typeQuery == 1)
                 {
                     _printVehicle(vehicle);
+                    count++;
                     Strings.lineTableDataVehicle();
                 }
                 if (typeQuery == 2)
                 {
                     if (vehicle.color == query)
                     {
+                        count++;
                         _printVehicle(vehicle);
                         Strings.lineTableDataVehicle();
                     }
@@ -155,10 +162,17 @@ namespace Vehicles.Services
                 {
                     if (vehicle.year <= int.Parse(query))
                     {
+                        count++;
                         _printVehicle(vehicle);
                         Strings.lineTableDataVehicle();
                     }
                 }
+            }
+
+            if (count == 0)
+            {
+                Strings.tableNotFound();
+                Strings.lineTableDataVehicle();
             }
         }
 

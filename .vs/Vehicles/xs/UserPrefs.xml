@@ -1,31 +1,32 @@
 ﻿<Properties StartupConfiguration="{ACCC8A0C-348E-4614-9673-A07621E4037A}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Vehicles/Services/VehicleService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Vehicles/Models/Vehicle.cs">
     <Files>
       <File FileName="Vehicles/Program.cs" />
-      <File FileName="Vehicles/Services/VehicleService.cs" Line="27" Column="1" />
-      <File FileName="Vehicles/Database/Data.cs" />
-      <File FileName="Vehicles/Models/Car.cs" />
+      <File FileName="Vehicles/Services/VehicleService.cs" Line="273" Column="30" />
+      <File FileName="Vehicles/Database/Data.cs" Line="298" Column="42" />
+      <File FileName="Vehicles/Models/Car.cs" Line="39" Column="21" />
       <File FileName="Vehicles/Models/Motobike.cs" />
       <File FileName="Vehicles/Models/Truck.cs" />
-      <File FileName="Vehicles/Models/Vehicle.cs" />
+      <File FileName="Vehicles/Models/Vehicle.cs" Line="12" Column="38" />
       <File FileName="Vehicles/Helpers/Constants.cs" />
       <File FileName="Vehicles/Helpers/Strings.cs" />
       <File FileName="Vehicles/Routes/Route.cs" />
       <File FileName="Vehicles/Helpers/Common.cs" />
+      <File FileName="Vehicles/Interface/ICar.cs" Line="1" Column="1" />
+      <File FileName="Vehicles/Interface/IMotobike.cs" Line="4" Column="31" />
+      <File FileName="Vehicles/Interface/ITruck.cs" Line="9" Column="1" />
+      <File FileName="Vehicles/Interface/IVehicle.cs" Line="8" Column="5" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Vehicles" selected="True">
-            <Node name="Vehicles" expanded="True">
+          <Node name="Vehicles" expanded="True">
+            <Node name="Vehicles">
               <Node name="Database" expanded="True" />
-              <Node name="Helpers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Routes" expanded="True" />
+              <Node name="Interface" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Vehicle.cs" selected="True" />
+              </Node>
               <Node name="Services" expanded="True" />
             </Node>
           </Node>
@@ -33,7 +34,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Vehicles PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>

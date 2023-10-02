@@ -1,11 +1,12 @@
 ﻿using System;
 using Vehicles.Database;
 using Vehicles.Helpers;
+using Vehicles.Interface;
 
 namespace Vehicles.Models
 {
-	public class Truck : Vehicle
-	{
+	public class Truck : Vehicle, ITruck
+    {
         public string payload { get; set; }
 
         public Truck() { }
@@ -39,9 +40,9 @@ namespace Vehicles.Models
             Data.edit(id, truck.toString());
         }
 
-        public override string toString()
+        public string toString()
         {
-            return $"{id},{type},{brand},{year},{price},{color},{createAt},{payload}";
+            return $"{base.toString()},{payload}";
         }
 
         public static void printCar(Truck truck)
