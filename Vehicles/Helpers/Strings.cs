@@ -75,6 +75,11 @@ namespace Vehicles.Helpers
             Console.WriteLine("+-----------+----+----------+----------------+---------------+--------+---------+------------+-------------+-------------+");
         }
 
+        public static void tableNotFound()
+        {
+            Console.WriteLine("|                                             Khong tim thay san pham nao                                                |");
+        }
+
         public static void lineTableDataVehicle()
         {
             Console.WriteLine("+-----------+----+----------+----------------+---------------+--------+---------+------------+-------------+-------------+");

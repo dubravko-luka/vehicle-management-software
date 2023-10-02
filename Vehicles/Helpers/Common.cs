@@ -29,7 +29,7 @@ namespace Vehicles.Helpers
 
         public static bool checkIsContinute()
         {
-            Console.Write("Ban co muon tiep tuc? (Y/N): ");
+            Console.Write("Nhap y tiep tuc: ");
             string continute = Console.ReadLine();
             if (continute == "y" || continute == "Y")
             {

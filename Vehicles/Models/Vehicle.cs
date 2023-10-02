@@ -1,9 +1,10 @@
 ﻿using System;
 using Vehicles.Helpers;
+using Vehicles.Interface;
 
 namespace Vehicles.Models
 {
-	public abstract class Vehicle
+	public abstract class Vehicle: IVehicle
 	{
         public int id { get; set; }
         public Constants.VEHICLE_TYPE_ENUM type { get; set; }
@@ -30,7 +31,10 @@ namespace Vehicles.Models
 
         public abstract void edit(int id, Constants.VEHICLE_TYPE_ENUM type, string brand, int year, double price, string color, DateTime createAt);
 
-        public abstract string toString();
+        public string toString()
+        {
+            return $"{id},{type},{brand},{year},{price},{color},{createAt}";
+        }
     }
 }
 

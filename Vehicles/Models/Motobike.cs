@@ -1,11 +1,12 @@
 ﻿using System;
 using Vehicles.Database;
 using Vehicles.Helpers;
+using Vehicles.Interface;
 
 namespace Vehicles.Models
 {
-	public class Motobike : Vehicle
-	{
+	public class Motobike : Vehicle, IMotobike
+    {
         public int wattage { get; set; }
 
         public Motobike() { }
@@ -39,9 +40,9 @@ namespace Vehicles.Models
             Data.edit(id, motobike.toString());
         }
 
-        public override string toString()
+        public string toString()
         {
-            return $"{id},{type},{brand},{year},{price},{color},{createAt},{wattage}";
+            return $"{base.toString()},{wattage}";
         }
 
         public static void printCar(Motobike motobike)

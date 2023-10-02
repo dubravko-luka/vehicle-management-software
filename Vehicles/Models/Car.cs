@@ -2,11 +2,12 @@
 using Vehicles.Helpers;
 using Vehicles.Database;
 using System.Drawing;
+using Vehicles.Interface;
 
 namespace Vehicles.Models
 {
-	public class Car : Vehicle
-	{
+	public class Car : Vehicle, ICar
+    {
         public int seat { get; set; }
         public string engineType { get; set; }
 
@@ -18,9 +19,9 @@ namespace Vehicles.Models
             this.engineType = engineType;
         }
 
-        public override string toString()
+        public string toString()
         {
-            return $"{id},{type},{brand},{year},{price},{color},{createAt},{seat},{engineType}";
+            return $"{base.toString()},{seat},{engineType}";
         }
 
         public void createCar(string brand, int year, double price, string color)
