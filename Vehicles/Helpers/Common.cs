@@ -49,7 +49,7 @@ namespace Vehicles.Helpers
         // Check is number
         public static bool checkIsNumeric(string input)
         {
-            if (input.All(char.IsDigit))
+            if (input != "" && input.All(char.IsDigit))
             {
                 return true;
             }
@@ -103,9 +103,19 @@ namespace Vehicles.Helpers
             {
                 Console.Write(text);
                 _string = Console.ReadLine();
-            } while (_string == "");
+            } while (!checkValidString(_string));
 
             return _string;
+        }
+
+        public static bool checkValidString(string _string)
+        {
+            if (_string == "")
+            {
+                Console.WriteLine("Nhap khong hop le, vui long thu lai!");
+                return false;
+            }
+            return true;
         }
     }
 }

@@ -126,7 +126,7 @@ namespace Vehicles.Services
                     getAll(choice, color);
                     break;
                 case 3:
-                    string year = Common.inputString("Nhap nam san xuat: ");
+                    string year = Common.inputInt("Nhap nam san xuat: ").ToString();
                     Console.WriteLine($"Danh sach xe co nam san xuat truoc {year}:");
                     getAll(choice, year);
                     break;
@@ -194,27 +194,15 @@ namespace Vehicles.Services
 
         public void delete()
         {
-            string choice;
+            int choice;
 
             do
             {
                 Console.Clear();
                 _read(1);
-                do
-                {
-                    Console.Write("Nhap id can xoa, nhap 0 de tro ve: ");
-                    choice = Console.ReadLine();
-                } while (!Common.checkIsNumeric(choice));
+                choice = Common.inputInt("Nhap id can xoa, nhap 0 de tro ve: ");
 
-
-
-                if (Common.isQuit(int.Parse(choice)))
-                {
-                    Console.Clear();
-                    return;
-                }
-
-                Data.delete(int.Parse(choice));
+                Data.delete(choice);
 
             } while (Common.checkIsContinute());
             Console.Clear();
@@ -222,36 +210,32 @@ namespace Vehicles.Services
 
         public void edit()
         {
-            string id;
+            int id;
 
             do
             {
                 Console.Clear();
                 _read(1);
-                do
-                {
-                    Console.Write("Nhap id can sua, nhap 0 de tro ve: ");
-                    id = Console.ReadLine();
-                } while (!Common.checkIsNumeric(id));
+                id = Common.inputInt("Nhap id can sua, nhap 0 de tro ve: ");
 
-                if (Common.isQuit(int.Parse(id)))
+                if (Common.isQuit(id))
                 {
                     Console.Clear();
                     return;
                 }
-                string type = Data.getTypeStringId(int.Parse(id));
+                string type = Data.getTypeStringId(id);
 
                 if (type == Enum.GetName(typeof(Constants.VEHICLE_TYPE_ENUM), Constants.VEHICLE_TYPE_ENUM.CAR))
                 {
-                    _edit(1, int.Parse(id));
+                    _edit(1, id);
                 }
                 if (type == Enum.GetName(typeof(Constants.VEHICLE_TYPE_ENUM), Constants.VEHICLE_TYPE_ENUM.MOTOBIKE))
                 {
-                    _edit(2, int.Parse(id));
+                    _edit(2, id);
                 }
                 if (type == Enum.GetName(typeof(Constants.VEHICLE_TYPE_ENUM), Constants.VEHICLE_TYPE_ENUM.TRUCK))
                 {
-                    _edit(3, int.Parse(id));
+                    _edit(3, id);
                 }
 
             } while (Common.checkIsContinute());
